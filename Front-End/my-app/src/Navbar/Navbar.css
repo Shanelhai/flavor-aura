@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Playwrite+AU+SA:wght@100..400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+    font-family: "Inria Serif", serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(114, 45, 45);
+    border-radius: 2px; 
+    box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.8);
+}
+
+.navbar-logo {
+    font-size: 2rem;
+    color: white;
+    font-family: "Inria Serif", serif;
+    font-weight: bold;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.navbar-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-item {
+    margin-left: 20px;
+}
+
+.navbar-links {
+    font-size: 1.5rem;
+    color: white;
+    font-family: "Inria Serif", serif;
+    font-weight: bold;
+    margin-right: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+.navbar-links:hover {
+    color: black; /* Hover color */
+}
+
+.navbar-links.active-link {
+    color: red; /* Active link color */
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.ham-item {
+   font-size: 1.5rem;
+   color: white;
+   font-weight: bold;
+   transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* When the menu is open */
+.ham-item.open {
+    transform: rotate(45deg); /* Rotate the hamburger */
+}
+
+.ham-item.open::before,
+.ham-item.open::after {
+    transform: rotate(90deg); /* Cross the lines */
+}
+
+.ham-item.open {
+    opacity: 0; /* Make the hamburger lines disappear when open */
+}
+
+.ham-item::before,
+.ham-item::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.ham-item::before {
+    top: -8px;
+}
+
+.ham-item::after {
+    top: 8px;
+}
+
+/* On hover */
+.ham-item:hover {
+    transform: scale(1.5);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .nav-bar {
+        height: auto;
+        padding: 1rem;
+    }
+
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        background-color: rgba(122, 62, 62, 0.984);
+        backdrop-filter: blur(10px);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 1rem;
+        z-index: 999;
+    }
+
+    .navbar-item {
+        margin: 1rem 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+/* For small screens */
+@media (max-width: 480px) {
+    .navbar-logo {
+        font-size: 1.8rem;
+    }
+
+    .navbar-item {
+        margin-left: 2rem;
+    }
+
+    .ham-item {
+        font-size: 1.4rem;
+    }
+}
+
+/* Show menu when hamburger is clicked */
+.navbar-menu.active {
+    display: flex;
+}

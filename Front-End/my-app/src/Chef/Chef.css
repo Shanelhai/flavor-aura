@@ -1,0 +1,93 @@
+.Booking-chef {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  h2 {
+    text-align: center;
+    color: black;
+    font-family: "Inria Serif", serif;
+    padding: 20px;
+  }
+  /* Form Elements */
+  label {
+    font-size: 1.5rem;
+    color: black;
+    font-family: "Inria Serif", serif;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    color: black;
+    font-family: "Inria Serif", serif;
+  }
+  
+  input[type="time"] {
+    width: 49%;
+    display: inline-block;
+  }
+  
+  select {
+    width: 100%;
+  }
+  
+  textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  /* Button */
+.booking-chef{
+    background-color: red;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: white;
+    font-weight: bold;
+    font-family: "Inria Serif", serif;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Additional Styling for Chef Details */
+  h3 {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .Booking-chef {
+      padding: 10px;
+    }
+  
+    button {
+      font-size: 14px;
+    }
+  
+    input, textarea, select {
+      font-size: 14px;
+    }
+  }
+  

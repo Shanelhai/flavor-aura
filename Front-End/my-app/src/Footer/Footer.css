@@ -1,0 +1,108 @@
+/* Footer Styles */
+.footer {
+    background-color: rgb(114, 45, 45);  /* White background */
+    padding: 20px 0;  /* Space around the content */
+    text-align: center;  /* Center align text */
+    border-radius: 0;  /* Remove rounded corners, making it square */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+/* Social Icons Section */
+.social-icon {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.social-icon__item {
+    margin: 0 15px;
+}
+
+.social-icon__link {
+    color: white;  /* White color for icons */
+    font-size: 2.5rem;  /* Set icon size */
+    font-family: "Inria Serif", serif;
+    transition: color 0.3s ease-in-out;  /* Smooth hover effect */
+}
+
+.social-icon__link:hover {
+    color: #3b5998;  /* Hover color (e.g., Facebook blue) */
+}
+
+/* Menu Section */
+.menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.menu__item {
+    margin: 0 15px;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: white;  /* White color for links */
+    font-weight: bold;
+    font-family: "Inria Serif", serif;
+    font-size: 1.5rem;  /* Font size for links */
+    transition: color 0.3s ease-in-out;  /* Smooth hover effect */
+}
+
+.menu__link:hover {
+    color: black;  /* Hover color for menu items */
+}
+
+/* Copyright Section */
+footer p {
+    font-size: 1.5rem;
+    color: white;  /* Lighter text color for copyright */
+    font-weight: bold;
+    font-family: "Inria Serif", serif;
+    margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    /* Stacks the social icons and menu vertically on smaller screens */
+    .social-icon {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-icon__item {
+        margin: 10px 0;  /* Adjust spacing for vertical alignment */
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu__item {
+        margin: 10px 0;  /* Adjust spacing for vertical alignment */
+    }
+
+    footer p {
+        font-size: 1.2rem;  /* Reduce font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjustments for very small screens */
+    .social-icon__link {
+        font-size: 2rem;  /* Slightly reduce the icon size */
+    }
+
+    .menu__link {
+        font-size: 1.2rem;  /* Reduce font size for menu items */
+    }
+
+    footer p {
+        font-size: 1rem;  /* Further reduce the copyright text size */
+    }
+}

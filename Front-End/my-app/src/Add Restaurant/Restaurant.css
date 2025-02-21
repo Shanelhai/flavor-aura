@@ -1,0 +1,164 @@
+.Rest-chef {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 40px 20px;
+  overflow-x: auto;  /* Enables horizontal scrolling */
+  white-space: nowrap; /* Prevents wrapping of items */
+  max-width: 100%;  /* Ensure it doesn't exceed the container width */
+  background-color: rgb(114, 45, 45);
+ 
+}
+
+.Rest-chef h1 {
+  font-size: 2.5rem;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-family: 'Arial', sans-serif;
+}
+
+.Restaurant-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgb(114, 45, 45);
+  font-family: "Inria Serif", serif;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.Rest-boxone, .Rest-boxtwo {
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+  max-height: 400px;
+  overflow-y: auto;
+  margin-bottom: 20px; /* Add some space between the two boxes */
+}
+
+/* Default widths for larger screens */
+.Rest-boxone {
+  width: 60%;
+}
+
+.Rest-boxtwo {
+  width: 35%;
+}
+
+/* Header */
+h2 {
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  font-family: "Inria Serif", serif;
+  margin-bottom: 20px;
+  position: sticky;
+  top: 0;
+  background-color: rgb(251, 251, 251); /* Optional: to prevent overlap with other content */
+  z-index: 10;
+  padding-top: 20px;
+}
+
+/* Form styling */
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+  font-size: 1.5rem;
+  color: black;
+  font-family: "Inria Serif", serif;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  font-family: "Inria Serif", serif;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+.Rest-button {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Inria Serif", serif;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Message */
+.message {
+  margin-top: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #e7f3e7;
+  color: #4CAF50;
+  text-align: center;
+}
+
+/* Styling for the radio buttons */
+.food > label {
+  margin-right: 15px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  /* Stack the boxes vertically and adjust width */
+  .Restaurant-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Rest-boxone, .Rest-boxtwo {
+    width: 90%; /* Take up full width with some padding */
+    margin-bottom: 20px;
+  }
+
+  /* Reduce font sizes for better readability on smaller screens */
+  h1 {
+    font-size: 2rem;
+  }
+
+  label, input, .Rest-button {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjust for very small screens (e.g., mobile phones) */
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .form {
+    font-size: 1rem;
+  }
+
+  label, input {
+    font-size: 1rem;
+  }
+
+  .Rest-button {
+    font-size: 1.2rem;
+  }
+
+  .message {
+    font-size: 1rem;
+  }
+}

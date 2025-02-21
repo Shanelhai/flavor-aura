@@ -1,0 +1,61 @@
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background-color:  rgb(114, 45, 45);;
+}
+
+.service-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+.service-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.service-name {
+    font-size: 1.5em;
+    color: black;
+    font-family: "Inria Serif", serif;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.service-description {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: black;
+    font-family: "Inria Serif", serif;
+}
+
+.service-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: red;
+    font-size: 1.5rem;
+    color: white;
+    font-family: "Inria Serif", serif;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.service-button:hover {
+    background-color: #45a049;
+}
