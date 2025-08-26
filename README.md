@@ -1,6 +1,8 @@
 🌟 Flavor Aura – Restaurant Website
 Welcome to Flavor Aura, where the essence of fine Indian cuisine meets a warm, welcoming atmosphere. This is the official web presence of our restaurant located in the heart of Haldwani / Rampur Road, dedicated to delivering memorable dining experiences both in-house and at home.
 
+![image alt](https://github.com/Shanelhai/flavor-aura/blob/572af065cd79709304033c4fc89a9e377d695e1f/1.PNG)
+
 🌐 Website Overview
 Flavor Aura’s website is designed to give visitors a taste of our culinary story, services, values, and unique offerings.
 
