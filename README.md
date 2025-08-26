@@ -3,6 +3,12 @@ Welcome to Flavor Aura, where the essence of fine Indian cuisine meets a warm, w
 
 ![image alt](https://github.com/Shanelhai/flavor-aura/blob/572af065cd79709304033c4fc89a9e377d695e1f/1.PNG)
 
+![image alt](https://github.com/Shanelhai/flavor-aura/blob/8b03505e8ab24269b211fdaacae3d2207fd891ad/2.PNG)
+
+![image alt](https://github.com/Shanelhai/flavor-aura/blob/8b03505e8ab24269b211fdaacae3d2207fd891ad/3.PNG)
+
+![image alt](https://github.com/Shanelhai/flavor-aura/blob/8b03505e8ab24269b211fdaacae3d2207fd891ad/4.PNG)
+
 🌐 Website Overview
 Flavor Aura’s website is designed to give visitors a taste of our culinary story, services, values, and unique offerings.
 
